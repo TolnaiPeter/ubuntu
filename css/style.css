@@ -1,0 +1,181 @@
+/*
+Az oldal betűszíne #4f4f4f,
+háttérszíne #f9f9f9,
+betűkészlete 'Arial' vagy annak
+hiányában 'sans-serif',
+az alapértelmezett betűméret pedig 14px.
+*/
+
+body {
+	background-color: #f9f9f9;
+	color: #4f4f4f;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+}
+
+/*
+A #keret szélessége 1125px,
+szegélye 1px vastag és #e0e0e0 színű,
+a doboz középre igazított
+a böngésző ablakban.
+A belső margó 0px, a háttér fehér színű.
+*/
+
+#keret {
+	max-width: 1125px;
+	border: 1px;
+	border-color: #e0e0e0;
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+/*
+A #fejlec szélessége 1125px,
+magassága 300px,
+a külső és a belső margó is 0px, és a
+háttérkép az url("omg.png").
+*/
+#fejlec {
+	max-width: 1125px;
+	height: 300px;
+	margin: 0px;
+	padding: 0px;
+	background: url('../kepek/omg.png');
+	background-position: top center;
+}
+
+/*
+A #torzs 1125px széles,
+a külső és a belső margó 0px.
+*/
+#torzs {
+	max-width: 1125px;
+	margin: 0px;
+	padding: 0px;	
+}
+
+/*
+A #cikk balra úsztatott,
+720px széles,
+0px-es külső és 20px-es belső margóval.
+Háttérszíne fehér.
+*/
+#cikk {
+	float: left;
+	max-width: 720px;
+	background-color: #ffffff;
+	text-align: left;
+	margin: 0px;
+	padding: 20px;	
+}
+
+/*
+A #kommentek doboz jobbra úsztatott,
+300px széles,
+1300px magas,
+a külső margó 0px széles
+a belső pedig 20px.
+Háttérszíne #efefef.
+*/
+#kommentek {
+	float: right;
+	max-width: 300px;
+	max-height: 1300px;
+	background-color: #efefef;
+	text-align: left;
+	margin: 0px;
+	padding: 20px;	
+}
+/*
+A .komment dobozok szélessége legyen 280px széles,
+belső margójuk 5px széles, a külső
+margójuk alul és felül 10 px,
+a bal és jobb oldali margóval pedig
+igazítsuk középre a dobozokat
+a #kommentek dobozon belül.
+Mindegyik megjegyzés kapjon egy elegáns 1px
+vastag és #e0e0e0 színű,
+folyamatos szegély keretet.
+*/
+.komment {
+	max-width: 280px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: 5px;	
+	border: 1px solid #e0e0e0;
+}
+
+/*
+A #lablec törli az úsztatást (clear:both),
+betűszíne #808080,
+szélessége 1085px,
+a külső margó 0px,
+a belső margó 20px.
+Háttérszíne #efefef,
+szöveges tartalma középre igazított
+(text-align: center).
+*/
+#lablec {
+	clear: both;
+	max-width: 1085px;
+	background-color: #efefef;
+	color: #808080;
+	text-align: center;
+	margin: 0px;
+	padding: 20px;		
+}
+
+/*
+Az egyes szintű címsor #333333 színű
+és betűmérete 32px.
+*/
+h1 {
+	color: #333333;
+	font-size: 32px;
+}
+
+/*
+A kettes szintű címsor #f15d22 színű
+és betűmérete 24px.
+*/
+h2 {
+	color: #f15d22;
+	font-size: 24px;
+}
+
+/*
+A képek szélessége 500px és
+középre igazítottak.
+Mivel az <img> elem inline elem,
+így alapban nem érvényesül rá
+a margin tulajdonság,
+ezért block elemmé kell alakítanunk.
+display: block
+*/
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+
+/*
+A hivatkozások félkövérek,
+nincsenek aláhúzva és színük #f15d22.
+Ha az egérmutató fölöttük van akkor
+színük megváltozik #a0a0a0-ra.
+*/
+a:link {
+  color: #f15d22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-weight: bold;
+}
